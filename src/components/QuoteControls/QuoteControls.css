@@ -1,0 +1,69 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.controls__buttons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.controls__btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 100px;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.2px;
+}
+
+.controls__btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.controls__btn--secondary {
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+.controls__btn--secondary:not(:disabled):hover {
+  background: var(--hover-bg);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.controls__btn--random {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.65rem 1.75rem;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 14px var(--accent-shadow);
+}
+
+.controls__btn--random:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px var(--accent-shadow);
+}
+
+.controls__btn--random:active {
+  transform: translateY(0);
+}
+
+.controls__info {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+}

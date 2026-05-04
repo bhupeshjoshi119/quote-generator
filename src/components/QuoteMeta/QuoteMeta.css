@@ -1,0 +1,46 @@
+.quote-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.quote-meta__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.quote-meta__label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-muted);
+}
+
+.quote-meta__value {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.quote-meta__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--border);
+  margin: 0 0.25rem;
+  align-self: center;
+}
+
+@media (max-width: 480px) {
+  .quote-meta__dot {
+    display: none;
+  }
+}
