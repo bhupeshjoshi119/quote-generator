@@ -172,6 +172,4 @@ Total: **300 quotes** across **30 pages**.
 
 ---
 
-## 📄 License
 
-MIT
